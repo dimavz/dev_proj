@@ -1,0 +1,25 @@
+{
+  "name": "development-project",
+  "version": "1.0.0",
+  "description": "Project for development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimavz/dev_proj.git"
+  },
+  "keywords": [
+    "galp",
+    "sass",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "Dmitry Zatulenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimavz/dev_proj/issues"
+  },
+  "homepage": "https://github.com/dimavz/dev_proj#readme"
+}
