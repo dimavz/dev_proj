@@ -31,22 +31,34 @@
 <header id="header">
     <nav class="navbar">
         <div class="container">
-            <a class="home_icon" href="/">
-                <i class="fa fa-home" aria-hidden="true"></i>
-            </a>
-            <ul>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-                <li><a href="#">Пункт</a></li>
-            </ul>
-        </div>
+            <div class="wrapper_nav">
+                <div class="home_icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>
+                        <span>
+                            О системе
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Владельцам</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Цто</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Наши партнёры</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container -->
     </nav>
-
-
 </header>
 
 <!--[if lt IE 9]>
@@ -56,6 +68,7 @@
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>

@@ -2,24 +2,67 @@
 @import "partitions/mixins";
 
 #header{
+  @include shadow_block;
 
   .navbar{
     background-color: $grey;
 
-    .home_icon{
-      color: $yellow;
-      @include clear;
-      font-size: 24px;
-    }
-    ul{
 
-      li{
-        display: inline-block;
-        padding: 5px 10px;
+    .wrapper_nav{
+      padding-top: 10px;
+
+
+      .home_icon{
+        @include clear;
+        color: $yellow;
+        display: block;
+        float:left;
+        width: 30px;
+        font-size: 24px;
+        text-align: center;
 
       }
+      ul{
+        @include clear-list;
+        display: block;
+        float: left;
+        width: 95%;
+
+        li{
+          display: inline-block;
+          padding: 5px 15px;
+          text-align: center;
+
+          span{
+
+          }
+
+          a{
+            position: relative;
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            @include shadow_text;
+
+            &:hover{
+              color: $yellow;
+
+            }
+
+            i{
+              position: absolute;
+              right: -15px;
+              top: 0px;
+            }
+          }
+        }
+      }
+
     }
+
+
   }
+
 }
 
 
