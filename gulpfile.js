@@ -10,7 +10,9 @@ var gulp = require('gulp'),
 var config ={
     paths:{
         scss:'src/scss/**/*.scss',
-        html:'src/**/*.html'
+        css:'src/css/**/*.css',
+        html:'src/**/*.html',
+        js:'src/**/*.js'
     },
     output:{
         nameFileCss:'main.css',
@@ -41,9 +43,13 @@ gulp.task('scss', function () {
 
 
 
-gulp.task('watch',['scss', 'browser'], function () {
+gulp.task('watch',['scss','browser'], function () {
     gulp.watch(config.paths.scss, ['scss'],browser.reload);
     gulp.watch(config.paths.html,browser.reload);
+    gulp.watch(config.paths.js,browser.reload);
+    gulp.watch(config.paths.css,browser.reload);
 });
+
+gulp.task('default',['watch']);
 
 
