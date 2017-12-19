@@ -1,0 +1,13 @@
+@import "partitions/variables";
+@import "partitions/mixins";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+htmi, body {
+  @include clear;
+  @include font-default;
+}
+
+a{
+  text-decoration: none;
+}
