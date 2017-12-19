@@ -1,0 +1,27 @@
+@import "partitions/variables";
+@import "partitions/mixins";
+
+#header{
+
+  .navbar{
+    background-color: $grey;
+
+    .home_icon{
+      color: $yellow;
+      @include clear;
+      font-size: 24px;
+    }
+    ul{
+
+      li{
+        display: inline-block;
+        padding: 5px 10px;
+
+      }
+    }
+  }
+}
+
+
+
+

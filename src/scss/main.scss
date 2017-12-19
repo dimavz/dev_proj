@@ -2,8 +2,7 @@
 @import "partitions/mixins";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
-htmi, body {
+html, body {
   @include clear;
   @include font-default;
 }

@@ -1,0 +1,20 @@
+#header .navbar {
+  background-color: #505559; }
+  #header .navbar .home_icon {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; }
+  #header .navbar ul li {
+    display: inline-block;
+    padding: 5px 10px; }
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
