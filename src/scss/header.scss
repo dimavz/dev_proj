@@ -1,69 +1,92 @@
 @import "partitions/variables";
 @import "partitions/mixins";
 
-#header{
+#header {
   @include shadow_block;
 
-  .navbar{
+  .navbar {
     background-color: $grey;
 
-
-    .wrapper_nav{
+    .wrapper_nav {
       padding-top: 10px;
 
-
-      .home_icon{
+      .home_icon {
         @include clear;
         color: $yellow;
         display: block;
-        float:left;
+        float: left;
         width: 30px;
         font-size: 24px;
         text-align: center;
 
       }
-      ul{
+      ul {
         @include clear-list;
         display: block;
         float: left;
         width: 95%;
 
-        li{
+        li {
           display: inline-block;
           padding: 5px 15px;
-          text-align: center;
+          //text-align: center;
+          position: relative;
 
-          span{
+          &:hover {
+            color: $yellow;
+            ul.dropdown {
+              opacity: 1;
+            }
+          }
+          span {
+            @include clear;
+            color: $white;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
 
+            &:hover {
+              color: $yellow;
+              ul.dropdown {
+                opacity: 1;
+              }
+            }
+
+            i {
+              position: absolute;
+              right: -10px;
+            }
+          }
+          ul.dropdown {
+            display: block;
+            //width: 100%;
+            position: absolute;
+            min-width: 300px;
+            top: 39px;
+            left: 0;
+            background-color: $orange;
+            transition: .3s opacity;
+            opacity: 0;
           }
 
-          a{
+          a {
             position: relative;
             color: $white;
             text-transform: uppercase;
             text-decoration: none;
             @include shadow_text;
 
-            &:hover{
+            &:hover {
               color: $yellow;
 
-            }
-
-            i{
-              position: absolute;
-              right: -15px;
-              top: 0px;
             }
           }
         }
       }
-
     }
-
-
   }
-
 }
+
 
 
 
