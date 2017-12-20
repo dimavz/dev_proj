@@ -13,4 +13,7 @@ body{
 
 a{
   text-decoration: none;
+  &.active{
+    color: $yellow;
+  }
 }
