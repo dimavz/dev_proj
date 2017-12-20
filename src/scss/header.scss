@@ -20,6 +20,16 @@
         text-align: center;
         margin-top: -3px;
 
+        a{
+          color: $white;
+          &:hover{
+            color: $yellow;
+          }
+          &.active{
+            color: $yellow;
+          }
+        }
+
       }
       ul {
         @include clear-list;
@@ -53,6 +63,10 @@
               }
             }
 
+            &.active{
+              color: $yellow;
+            }
+
             i {
               position: absolute;
               right: -10px;
@@ -80,6 +94,10 @@
             &:hover {
               color: $yellow;
 
+            }
+
+            &.active{
+              color: $yellow;
             }
           }
         }

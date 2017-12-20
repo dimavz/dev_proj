@@ -15,6 +15,12 @@
         font-size: 24px;
         text-align: center;
         margin-top: -3px; }
+        #header .navbar .wrapper_nav .home_icon a {
+          color: #fff; }
+          #header .navbar .wrapper_nav .home_icon a:hover {
+            color: yellow; }
+          #header .navbar .wrapper_nav .home_icon a.active {
+            color: yellow; }
       #header .navbar .wrapper_nav ul {
         margin: 0;
         padding: 0;
@@ -41,6 +47,8 @@
               color: yellow; }
               #header .navbar .wrapper_nav ul li span:hover ul.dropdown {
                 opacity: 1; }
+            #header .navbar .wrapper_nav ul li span.active {
+              color: yellow; }
             #header .navbar .wrapper_nav ul li span i {
               position: absolute;
               right: -10px; }
@@ -62,6 +70,8 @@
             text-decoration: none;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
             #header .navbar .wrapper_nav ul li a:hover {
+              color: yellow; }
+            #header .navbar .wrapper_nav ul li a.active {
               color: yellow; }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
