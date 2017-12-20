@@ -8,12 +8,13 @@
       #header .navbar .wrapper_nav .home_icon {
         margin: 0;
         padding: 0;
-        color: yellow;
+        color: #fff;
         display: block;
         float: left;
         width: 30px;
         font-size: 24px;
-        text-align: center; }
+        text-align: center;
+        margin-top: -3px; }
       #header .navbar .wrapper_nav ul {
         margin: 0;
         padding: 0;
