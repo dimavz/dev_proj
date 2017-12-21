@@ -35,35 +35,37 @@
 
         li {
           @include clear;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           padding: 5px 15px;
           position: relative;
           cursor: pointer;
 
           &:hover {
-            span {
+            span, i{
               color: $yellow;
             }
             ul.dropdown {
               opacity: 1;
+              display: flex;
             }
           }
           span {
             @include clear;
             color: $white;
             text-transform: uppercase;
-            position: relative;
 
-            &.active {
-              color: $yellow;
-            }
-
-            i {
-              position: absolute;
-              right: -10px;
-            }
           }
+          i {
+            align-self: flex-start;
+            margin-left: 5px;
+            color: $white;
+          }
+
           .dropdown {
-            display: flex;
+            //display: flex;
+            display: none;
             flex-direction: column;
             flex-wrap: wrap;
             position: absolute;
