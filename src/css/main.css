@@ -1,79 +1,3 @@
-#header {
-  -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
-  #header .navbar {
-    background-color: #43484C; }
-    #header .navbar .wrapper_nav {
-      padding-top: 10px; }
-      #header .navbar .wrapper_nav .home_icon {
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        display: block;
-        float: left;
-        width: 30px;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -3px; }
-        #header .navbar .wrapper_nav .home_icon a {
-          color: #fff; }
-          #header .navbar .wrapper_nav .home_icon a:hover {
-            color: yellow; }
-          #header .navbar .wrapper_nav .home_icon a.active {
-            color: yellow; }
-      #header .navbar .wrapper_nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: block;
-        float: left;
-        width: 95%; }
-        #header .navbar .wrapper_nav ul li {
-          display: inline-block;
-          padding: 5px 15px;
-          position: relative; }
-          #header .navbar .wrapper_nav ul li:hover {
-            color: yellow; }
-            #header .navbar .wrapper_nav ul li:hover ul.dropdown {
-              opacity: 1; }
-          #header .navbar .wrapper_nav ul li span {
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            text-transform: uppercase;
-            position: relative;
-            cursor: pointer; }
-            #header .navbar .wrapper_nav ul li span:hover {
-              color: yellow; }
-              #header .navbar .wrapper_nav ul li span:hover ul.dropdown {
-                opacity: 1; }
-            #header .navbar .wrapper_nav ul li span.active {
-              color: yellow; }
-            #header .navbar .wrapper_nav ul li span i {
-              position: absolute;
-              right: -10px; }
-          #header .navbar .wrapper_nav ul li ul.dropdown {
-            display: block;
-            position: absolute;
-            min-width: 300px;
-            top: 39px;
-            left: 0;
-            background-color: #EC971F;
-            -webkit-transition: .3s opacity;
-            -o-transition: .3s opacity;
-            transition: .3s opacity;
-            opacity: 0; }
-          #header .navbar .wrapper_nav ul li a {
-            position: relative;
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-            #header .navbar .wrapper_nav ul li a:hover {
-              color: yellow; }
-            #header .navbar .wrapper_nav ul li a.active {
-              color: yellow; }
-
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
   margin: 0;
@@ -86,3 +10,104 @@ body {
 
 a {
   text-decoration: none; }
+  a.active {
+    color: yellow; }
+
+#header {
+  -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
+  #header .navbar {
+    background-color: #43484C; }
+    #header .navbar .wrapper_nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 50px; }
+      #header .navbar .wrapper_nav .home_icon {
+        color: #fff;
+        font-size: 22px; }
+        #header .navbar .wrapper_nav .home_icon a {
+          color: #fff; }
+          #header .navbar .wrapper_nav .home_icon a:hover {
+            color: yellow; }
+          #header .navbar .wrapper_nav .home_icon a.active {
+            color: yellow; }
+      #header .navbar .wrapper_nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+        #header .navbar .wrapper_nav ul li {
+          margin: 0;
+          padding: 0;
+          padding: 5px 15px;
+          position: relative;
+          cursor: pointer; }
+          #header .navbar .wrapper_nav ul li:hover span {
+            color: yellow; }
+          #header .navbar .wrapper_nav ul li:hover ul.dropdown {
+            opacity: 1; }
+          #header .navbar .wrapper_nav ul li span {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative; }
+            #header .navbar .wrapper_nav ul li span.active {
+              color: yellow; }
+            #header .navbar .wrapper_nav ul li span i {
+              position: absolute;
+              right: -10px; }
+          #header .navbar .wrapper_nav ul li .dropdown {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            position: absolute;
+            min-width: 350px;
+            top: 39px;
+            left: 0;
+            background-color: #EC971F;
+            -webkit-transition: .5s all;
+            -o-transition: .5s all;
+            transition: .5s all;
+            opacity: 0;
+            -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+            z-index: 100; }
+            #header .navbar .wrapper_nav ul li .dropdown li {
+              cursor: pointer;
+              -webkit-flex-basis: auto;
+                  -ms-flex-preferred-size: auto;
+                      flex-basis: auto; }
+              #header .navbar .wrapper_nav ul li .dropdown li:hover a {
+                color: yellow; }
+          #header .navbar .wrapper_nav ul li a {
+            position: relative;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+            #header .navbar .wrapper_nav ul li a:hover {
+              color: yellow; }
+            #header .navbar .wrapper_nav ul li a.active {
+              color: yellow; }
