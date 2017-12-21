@@ -7,25 +7,22 @@
   .navbar {
     background-color: $grey;
 
+
     .wrapper_nav {
-      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      height: 50px;
 
       .home_icon {
-        @include clear;
         color: $white;
-        display: block;
-        float: left;
-        width: 30px;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -3px;
+        font-size: 22px;
 
-        a{
+        a {
           color: $white;
-          &:hover{
+          &:hover {
             color: $yellow;
           }
-          &.active{
+          &.active {
             color: $yellow;
           }
         }
@@ -33,18 +30,19 @@
       }
       ul {
         @include clear-list;
-        display: block;
-        float: left;
-        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
 
         li {
-          display: inline-block;
+          @include clear;
           padding: 5px 15px;
-          //text-align: center;
           position: relative;
+          cursor: pointer;
 
           &:hover {
-            color: $yellow;
+            span {
+              color: $yellow;
+            }
             ul.dropdown {
               opacity: 1;
             }
@@ -54,16 +52,8 @@
             color: $white;
             text-transform: uppercase;
             position: relative;
-            cursor: pointer;
 
-            &:hover {
-              color: $yellow;
-              ul.dropdown {
-                opacity: 1;
-              }
-            }
-
-            &.active{
+            &.active {
               color: $yellow;
             }
 
@@ -72,16 +62,32 @@
               right: -10px;
             }
           }
-          ul.dropdown {
-            display: block;
+          .dropdown {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             position: absolute;
-            min-width: 300px;
+            min-width: 350px;
             top: 39px;
             left: 0;
             background-color: $orange;
-            transition: .3s opacity;
+            transition: .5s all;
             opacity: 0;
             @include shadow_block;
+            z-index: 100;
+
+            li {
+              //width: 100%;
+              //height: 100%;
+              cursor: pointer;
+              flex-basis: auto;
+
+              &:hover {
+                a {
+                  color: $yellow;
+                }
+              }
+            }
           }
 
           a {
@@ -96,7 +102,7 @@
 
             }
 
-            &.active{
+            &.active {
               color: $yellow;
             }
           }
