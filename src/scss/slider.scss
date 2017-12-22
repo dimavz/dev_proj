@@ -1,0 +1,11 @@
+@import "partitions/variables";
+@import "partitions/mixins";
+
+#slider {
+  .slider_wrapper{
+    @include shadow_block;
+    background-color: $green-light;
+    height: 300px;
+  }
+
+}
