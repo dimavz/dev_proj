@@ -7,7 +7,7 @@
   .navbar {
     background-color: $grey;
 
-    .active{
+    .active {
       color: $yellow;
     }
 
@@ -25,79 +25,92 @@
         align-items: center;
         justify-content: center;
 
-        a{
+        a {
           color: $white;
 
-          &.active{
+          &.active {
             color: $yellow;
           }
         }
 
-        &:hover{
-          a{color: $yellow;}
+        &:hover {
+          a {
+            color: $yellow;
+          }
         }
       }
-      > ul{
+      > ul {
         @include clear-list;
         display: flex;
         align-items: center;
         height: 40px;
         width: 100%;
 
-       > li{
+        > li {
           padding-right: 25px;
           text-transform: uppercase;
           color: $white;
 
-          &:first-child{
-            padding-left: 15px;
+          &:first-child {
+            padding-left: 3px;
           }
 
-          a{
+          a {
             color: $white;
             text-decoration: none;
             @include shadow_text;
 
-            &:hover, &.active{
+            &:hover, &.active {
               color: $yellow;
             }
 
-
           }
 
-          &.active{
+          &.active {
             color: $yellow;
           }
 
-          &.dropdown{
+          &.dropdown {
             display: flex;
             align-items: center;
             position: relative;
 
-            span{
+            //&:last-child {
+            //  background-color: $orange;
+            //
+            //  &:hover {
+            //    li.dropdown ul {
+            //      display: none;
+            //    }
+            //  }
+            //}
+
+            span {
               @include shadow_text;
               cursor: pointer;
-              &:hover{
+
+              &:hover {
                 color: $yellow;
               }
             }
 
-            i{
+            i {
               padding-left: 5px;
               font-size: 12px;
             }
 
-            &:hover{
-              i{
+            &:hover {
+              i {
                 color: $yellow;
               }
-              ul{
+              ul {
                 visibility: visible;
+                top: 38px;
                 opacity: .8;
               }
             }
 
-            ul{
+            ul {
               @include clear-list;
               @include shadow_block;
               display: flex;
@@ -108,36 +121,42 @@
               left: 0;
               min-width: 300px;
               background-color: $grey;
-              z-index:10;
+              z-index: 10;
               visibility: hidden;
-              transition: .3s all;
+              //opacity: 0;
+              transition: all .3s;
 
-              >li {
+              > li {
                 padding: 5px 15px;
                 cursor: pointer;
                 border-bottom: 1px dotted $white;
 
-                &:hover{
-                  
-                  a{color: $yellow;}
+                &:hover {
+
+                  a {
+                    color: $yellow;
+                  }
                 }
 
-                a{
+                a {
                   text-transform: none;
-                  &.active{
+                  &.active {
                     color: $yellow;
                   }
                 }
               }
             }
-
           }
-
         }
       }
     }
   }
 }
+
+
+
+
+
 
 
 
