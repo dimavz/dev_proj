@@ -143,3 +143,9 @@ a {
                   text-transform: none; }
                   #header .navbar .wrapper_nav > ul > li.dropdown ul > li a.active {
                     color: yellow; }
+
+#slider .slider_wrapper {
+  -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+  background-color: #4EC698;
+  height: 300px; }

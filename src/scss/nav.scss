@@ -1,5 +1,6 @@
 @import "partitions/variables";
 @import "partitions/mixins";
+@import "partitions/media";
 
 #header {
   @include shadow_block;
