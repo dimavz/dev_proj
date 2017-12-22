@@ -60,6 +60,9 @@
             color: $white;
             text-decoration: none;
             @include shadow_text;
+            @include devices-max-width-1200px{
+              font-size:14px;
+            }
 
             &:hover, &.active {
               color: $yellow;
