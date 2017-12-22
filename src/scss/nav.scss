@@ -7,6 +7,9 @@
   .navbar {
     background-color: $grey;
 
+    .active{
+      color: $yellow;
+    }
 
     .wrapper_nav {
       display: flex;
@@ -14,105 +17,130 @@
       height: 50px;
 
       .home_icon {
+        height: 40px;
+        width: 40px;
         color: $white;
-        font-size: 22px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        a {
+        a{
           color: $white;
-          &:hover {
-            color: $yellow;
-          }
-          &.active {
+
+          &.active{
             color: $yellow;
           }
         }
 
+        &:hover{
+          a{color: $yellow;}
+        }
       }
-      ul {
+      > ul{
         @include clear-list;
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        height: 40px;
+        width: 100%;
 
-        li {
-          @include clear;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 5px 15px;
-          position: relative;
-          cursor: pointer;
+       > li{
+          padding-right: 25px;
+          text-transform: uppercase;
+          color: $white;
 
-          &:hover {
-            span, i{
-              color: $yellow;
-            }
-            ul.dropdown {
-              opacity: 1;
-              display: flex;
-            }
+          &:first-child{
+            padding-left: 15px;
           }
-          span {
-            @include clear;
+
+          a{
             color: $white;
-            text-transform: uppercase;
-
-          }
-          i {
-            align-self: flex-start;
-            margin-left: 5px;
-            color: $white;
-          }
-
-          .dropdown {
-            //display: flex;
-            display: none;
-            flex-direction: column;
-            flex-wrap: wrap;
-            position: absolute;
-            min-width: 350px;
-            top: 39px;
-            left: 0;
-            background-color: $orange;
-            transition: .5s all;
-            opacity: 0;
-            @include shadow_block;
-            z-index: 100;
-
-            li {
-              //width: 100%;
-              //height: 100%;
-              cursor: pointer;
-              flex-basis: auto;
-
-              &:hover {
-                a {
-                  color: $yellow;
-                }
-              }
-            }
-          }
-
-          a {
-            position: relative;
-            color: $white;
-            text-transform: uppercase;
             text-decoration: none;
             @include shadow_text;
 
-            &:hover {
-              color: $yellow;
-
-            }
-
-            &.active {
+            &:hover, &.active{
               color: $yellow;
             }
+
+
           }
+
+          &.active{
+            color: $yellow;
+          }
+
+          &.dropdown{
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            span{
+              @include shadow_text;
+              cursor: pointer;
+              &:hover{
+                color: $yellow;
+              }
+            }
+
+            i{
+              padding-left: 5px;
+              font-size: 12px;
+            }
+
+            &:hover{
+              i{
+                color: $yellow;
+              }
+              ul{
+                visibility: visible;
+                opacity: .8;
+              }
+            }
+
+            ul{
+              @include clear-list;
+              @include shadow_block;
+              display: flex;
+              flex-direction: column;
+              align-content: flex-start;
+              position: absolute;
+              top: 38px;
+              left: 0;
+              min-width: 300px;
+              background-color: $grey;
+              z-index:10;
+              visibility: hidden;
+              transition: .3s all;
+
+              >li {
+                padding: 5px 15px;
+                cursor: pointer;
+                border-bottom: 1px dotted $white;
+
+                &:hover{
+                  
+                  a{color: $yellow;}
+                }
+
+                a{
+                  text-transform: none;
+                  &.active{
+                    color: $yellow;
+                  }
+                }
+              }
+            }
+
+          }
+
         }
       }
     }
   }
 }
+
+
+
 
 
 
