@@ -32,7 +32,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="menu_icon visible-xs-block">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-bars" data-toggle="collapse" data-target="#mob_menu" aria-hidden="true"></i>
             </div>
             <div class="wrapper_nav hidden-xs">
                 <div class="home_icon">
@@ -94,6 +94,39 @@
             </div>
         </div><!-- /.container -->
     </nav>
+    <nav class="mobile_menu visible-xs-block">
+        <div class="container">
+            <div id="mob_menu">
+                <div class="well">
+                <div class="item">
+                    <a href="#">Главная</a>
+                </div>
+                <div class="item" data-toggle="collapse" data-target="#itemMenu1">
+                <span>О системе</span>
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </div>
+                <div class="collapse" id="itemMenu1">
+                    <ul>
+                        <li><a href="#">Описание СККО</a></li>
+                    </ul>
+                </div>
+                <div class="item" data-toggle="collapse" data-target="#itemMenu2">
+                    <span>Владельцам</span>
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </div>
+                <div class="collapse" id="itemMenu2">
+                    <ul>
+                        <li><a href="#">Порядок заключения договора</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a class="active" href="#">График подключения к СККО</a></li>
+                        <li><a href="#">Тарифы и способы оплаты</a></li>
+                        <li><a href="#">Вопросы/Ответы</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div><!--end #mob_menu-->
+        </div><!--end container-->
+    </nav><!--end mobile_menu-->
 </header>
 <section id="slider">
     <div class="container">

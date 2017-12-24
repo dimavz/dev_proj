@@ -18,3 +18,7 @@ a{
     color: $yellow;
   }
 }
+
+ul{
+  @include clear-list;
+}

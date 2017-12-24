@@ -3,10 +3,10 @@
 @import "partitions/media";
 
 #slider {
+  background-color: $green-light;
   .slider_wrapper{
-    @include shadow_block;
-    background-color: $green-light;
     height: 300px;
+    @include shadow_block;
   }
 
 }
