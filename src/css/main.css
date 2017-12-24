@@ -1,3 +1,5 @@
+/*==========  Desktop First Method  ==========*/
+/*==========  Mobile First Method  ==========*/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
   margin: 0;
@@ -13,6 +15,8 @@ a {
   a.active {
     color: yellow; }
 
+/*==========  Desktop First Method  ==========*/
+/*==========  Mobile First Method  ==========*/
 #header {
   -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
@@ -20,6 +24,28 @@ a {
     background-color: #43484C; }
     #header .navbar .active {
       color: yellow; }
+    #header .navbar .menu_icon {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding: 10px;
+      cursor: pointer; }
+      #header .navbar .menu_icon i {
+        font-size: 24px;
+        color: #fff;
+        padding: 5px;
+        background-color: #676f75;
+        -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+                box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
     #header .navbar .wrapper_nav {
       display: -webkit-box;
       display: -webkit-flex;
@@ -31,10 +57,9 @@ a {
               align-items: center;
       height: 50px; }
       #header .navbar .wrapper_nav .home_icon {
-        height: 40px;
-        width: 40px;
+        height: 100%;
         color: #fff;
-        font-size: 24px;
+        font-size: 22px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -46,7 +71,14 @@ a {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        padding-bottom: 2px; }
+        @media only screen and (max-width: 1200px) {
+          #header .navbar .wrapper_nav .home_icon {
+            font-size: 20px; } }
+        @media only screen and (max-width: 992px) {
+          #header .navbar .wrapper_nav .home_icon {
+            font-size: 18px; } }
         #header .navbar .wrapper_nav .home_icon a {
           color: #fff; }
           #header .navbar .wrapper_nav .home_icon a.active {
@@ -54,6 +86,7 @@ a {
         #header .navbar .wrapper_nav .home_icon:hover a {
           color: yellow; }
       #header .navbar .wrapper_nav > ul {
+        height: 100%;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -65,18 +98,41 @@ a {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        height: 40px;
+        padding-left: 15px;
         width: 100%; }
+        @media only screen and (max-width: 1200px) {
+          #header .navbar .wrapper_nav > ul {
+            padding-left: 10px; } }
+        @media only screen and (max-width: 992px) {
+          #header .navbar .wrapper_nav > ul {
+            padding-left: 5px; } }
         #header .navbar .wrapper_nav > ul > li {
           padding-right: 25px;
           text-transform: uppercase;
-          color: #fff; }
+          color: #fff;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          @media only screen and (max-width: 1200px) {
+            #header .navbar .wrapper_nav > ul > li {
+              padding-right: 15px; } }
+          @media only screen and (max-width: 992px) {
+            #header .navbar .wrapper_nav > ul > li {
+              padding-right: 10px; } }
           #header .navbar .wrapper_nav > ul > li:first-child {
             padding-left: 3px; }
           #header .navbar .wrapper_nav > ul > li a {
             color: #fff;
             text-decoration: none;
+            font-size: 18px;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+            @media only screen and (max-width: 1200px) {
+              #header .navbar .wrapper_nav > ul > li a {
+                font-size: 14px; } }
+            @media only screen and (max-width: 992px) {
+              #header .navbar .wrapper_nav > ul > li a {
+                font-size: 12px; } }
             #header .navbar .wrapper_nav > ul > li a:hover, #header .navbar .wrapper_nav > ul > li a.active {
               color: yellow; }
           #header .navbar .wrapper_nav > ul > li.active {
@@ -92,13 +148,26 @@ a {
                     align-items: center;
             position: relative; }
             #header .navbar .wrapper_nav > ul > li.dropdown span {
+              font-size: 18px;
               text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
               cursor: pointer; }
+              @media only screen and (max-width: 1200px) {
+                #header .navbar .wrapper_nav > ul > li.dropdown span {
+                  font-size: 14px; } }
+              @media only screen and (max-width: 992px) {
+                #header .navbar .wrapper_nav > ul > li.dropdown span {
+                  font-size: 12px; } }
               #header .navbar .wrapper_nav > ul > li.dropdown span:hover {
                 color: yellow; }
             #header .navbar .wrapper_nav > ul > li.dropdown i {
               padding-left: 5px;
               font-size: 12px; }
+              @media only screen and (max-width: 1200px) {
+                #header .navbar .wrapper_nav > ul > li.dropdown i {
+                  font-size: 10px; } }
+              @media only screen and (max-width: 992px) {
+                #header .navbar .wrapper_nav > ul > li.dropdown i {
+                  font-size: 8px; } }
             #header .navbar .wrapper_nav > ul > li.dropdown:hover i {
               color: yellow; }
             #header .navbar .wrapper_nav > ul > li.dropdown:hover ul {
@@ -144,6 +213,8 @@ a {
                   #header .navbar .wrapper_nav > ul > li.dropdown ul > li a.active {
                     color: yellow; }
 
+/*==========  Desktop First Method  ==========*/
+/*==========  Mobile First Method  ==========*/
 #slider .slider_wrapper {
   -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);

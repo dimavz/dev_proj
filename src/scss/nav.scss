@@ -12,19 +12,47 @@
       color: $yellow;
     }
 
+    .menu_icon{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+      cursor: pointer;
+
+      i{
+        font-size: 24px;
+        color: $white;
+        padding: 5px;
+        //border: 1px solid $white;
+        background-color: lighten($grey,15%);
+        @include shadow_block
+      }
+    }
+
     .wrapper_nav {
       display: flex;
       align-items: center;
       height: 50px;
 
       .home_icon {
-        height: 40px;
-        width: 40px;
+        height: 100%;
+        //width: 40px;
         color: $white;
-        font-size: 24px;
+        font-size: 22px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-bottom: 2px;
+        @include devices-max-width-1200px{
+          font-size: 20px;
+          //height: 35px;
+          //width: 35px;
+        }
+        @include devices-max-width-992px{
+          font-size: 18px;
+          //height: 30px;
+          //width: 30px;
+        }
 
         a {
           color: $white;
@@ -41,16 +69,31 @@
         }
       }
       > ul {
+        height: 100%;
         @include clear-list;
         display: flex;
         align-items: center;
-        height: 40px;
+        padding-left: 15px;
+        @include devices-max-width-1200px{
+          padding-left: 10px;
+        }
+        @include devices-max-width-992px{
+          padding-left: 5px;
+        }
+        //height: 40px;
         width: 100%;
 
         > li {
           padding-right: 25px;
           text-transform: uppercase;
           color: $white;
+          display: flex;
+          @include devices-max-width-1200px{
+            padding-right: 15px;
+          }
+          @include devices-max-width-992px{
+            padding-right: 10px;
+          }
 
           &:first-child {
             padding-left: 3px;
@@ -59,9 +102,13 @@
           a {
             color: $white;
             text-decoration: none;
+            font-size:18px;
             @include shadow_text;
             @include devices-max-width-1200px{
               font-size:14px;
+            }
+            @include devices-max-width-992px{
+              font-size:12px;
             }
 
             &:hover, &.active {
@@ -79,19 +126,17 @@
             align-items: center;
             position: relative;
 
-            //&:last-child {
-            //  background-color: $orange;
-            //
-            //  &:hover {
-            //    li.dropdown ul {
-            //      display: none;
-            //    }
-            //  }
-            //}
-
             span {
+              font-size:18px;
               @include shadow_text;
               cursor: pointer;
+
+              @include devices-max-width-1200px{
+                font-size:14px;
+              }
+              @include devices-max-width-992px{
+                font-size:12px;
+              }
 
               &:hover {
                 color: $yellow;
@@ -101,6 +146,12 @@
             i {
               padding-left: 5px;
               font-size: 12px;
+              @include devices-max-width-1200px{
+                font-size: 10px;
+              }
+              @include devices-max-width-992px{
+                font-size: 8px;
+              }
             }
 
             &:hover {
