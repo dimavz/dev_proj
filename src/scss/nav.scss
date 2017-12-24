@@ -7,6 +7,7 @@
 
   .navbar {
     background-color: $grey;
+    @include shadow_block
 
     .active {
       color: $yellow;
@@ -16,16 +17,18 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding: 10px;
-      cursor: pointer;
+      padding-top: 5px;
 
-      i{
+      i {
+        cursor: pointer;
         font-size: 24px;
         color: $white;
         padding: 5px;
         //border: 1px solid $white;
-        background-color: lighten($grey,15%);
-        @include shadow_block
+        //background-color: darken($grey,15%);
+        //@include shadow_block;
+        @include shadow_text;
+
       }
     }
 
@@ -204,6 +207,11 @@
           }
         }
       }
+    }
+
+    nav.mobile_menu{
+      background-color: lighten($grey,15%);
+      width: 100%;
     }
   }
 }
