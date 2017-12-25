@@ -259,6 +259,10 @@ ul {
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center; }
+          #header .mobile_menu ul li .title.active {
+            color: yellow; }
+            #header .mobile_menu ul li .title.active span, #header .mobile_menu ul li .title.active i {
+              color: yellow; }
           #header .mobile_menu ul li .title:hover {
             color: yellow; }
             #header .mobile_menu ul li .title:hover span {
@@ -281,6 +285,8 @@ ul {
             background-color: #4EC698; }
             #header .mobile_menu ul li ul li a {
               font-size: 12px; }
+              #header .mobile_menu ul li ul li a.active {
+                color: yellow; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/

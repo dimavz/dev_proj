@@ -245,10 +245,18 @@
           }
         }
 
+
         .title {
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          &.active{
+            color: $yellow;
+            span,i{
+              color: $yellow;
+            }
+          }
 
           &:hover{
             color: $yellow;
@@ -264,6 +272,10 @@
 
           & span {
             color: $white;
+
+            //&.active{
+            //  color: $yellow;
+            //}
           }
           & i {
             color: $white;
@@ -282,6 +294,10 @@
 
             & a{
               font-size:12px;
+
+              &.active{
+                color: $yellow;
+              }
             }
 
           }
