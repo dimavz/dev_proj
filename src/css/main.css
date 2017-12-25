@@ -94,10 +94,12 @@
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    #header .header_content .battons batton {
+    #header .header_content .battons a {
+      text-decoration: none;
+      font-size: 20px;
       background-color: #396B62;
       margin: 5px;
-      padding: 10px;
+      padding: 7px;
       -webkit-border-radius: 3px;
               border-radius: 3px;
       color: #fff;
@@ -109,9 +111,12 @@
       -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
               box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-      #header .header_content .battons batton i {
+      #header .header_content .battons a:hover {
+        color: yellow;
+        border: 1px solid yellow; }
+      #header .header_content .battons a i {
         padding-right: 5px;
-        font-size: 18px; }
+        font-size: 22px; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
