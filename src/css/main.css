@@ -231,7 +231,6 @@ ul {
       -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
               box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
       #header .mobile_menu ul li {
-        display: inline-block;
         padding: 5px 15px;
         background-color: #396B62;
         border-bottom: 1px dotted #fff;
@@ -247,13 +246,30 @@ ul {
           text-decoration: none; }
           #header .mobile_menu ul li a:hover {
             color: yellow; }
-        #header .mobile_menu ul li span {
-          color: #fff; }
-          #header .mobile_menu ul li span:hover {
+        #header .mobile_menu ul li .title {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          #header .mobile_menu ul li .title:hover {
             color: yellow; }
-        #header .mobile_menu ul li i {
-          color: #fff;
-          font-size: 22px; }
+            #header .mobile_menu ul li .title:hover span {
+              color: yellow; }
+            #header .mobile_menu ul li .title:hover i {
+              color: yellow; }
+          #header .mobile_menu ul li .title span {
+            color: #fff; }
+          #header .mobile_menu ul li .title i {
+            color: #fff;
+            font-size: 22px; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
