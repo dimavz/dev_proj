@@ -3,7 +3,7 @@
 @import "partitions/media";
 
 #slider {
-  background-color: $green-light;
+  background-color: $green;
   .slider_wrapper{
     height: 300px;
     @include shadow_block;

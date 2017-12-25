@@ -1,0 +1,96 @@
+@import "partitions/variables";
+@import "partitions/mixins";
+@import "partitions/media";
+
+#header {
+  .header_content{
+    background-color:$green-light;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    //height: 200px;
+
+    .wrap_site_info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+
+      h1 {
+        color: $white;
+        font-size: 72px;
+        font-family: 'RobotoBold', sans-serif;
+        font-weight: bold;
+        @include shadow_text;
+
+      }
+      .phone{
+        color: $yellow;
+        display: flex;
+        align-items: center;
+        @include shadow_text;
+
+        i{
+          font-size: 22px;
+          margin-right: 10px;
+        }
+        span{
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .wrap_slogan_info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 10px;
+
+      h3{
+        color: $white;
+        font-size: 28px;
+        font-weight: bold;
+        @include shadow_text;
+      }
+      span{
+        color: $yellow;
+        margin-left: -180px;
+        margin-top: 7px;
+        @include shadow_text;
+        font-size: 18px;
+      }
+    }
+
+    .battons{
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      batton {
+        //width: 200px;
+        background-color: $green;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 3px;
+        color: $white;
+        text-align: center;
+        display: block;
+        float: right;
+        cursor: pointer;
+        border: 1px solid $white;
+        @include shadow_block;
+        @include shadow_text;
+
+        i {
+          padding-right: 5px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+
+}
