@@ -221,6 +221,10 @@ ul {
   #header .mobile_menu {
     background-color: #4a5054;
     width: 100%; }
+    #header .mobile_menu .btn-success {
+      background-color: #396B62; }
+      #header .mobile_menu .btn-success:hover {
+        color: yellow; }
     #header .mobile_menu ul {
       padding: 2px;
       background-color: #fff;

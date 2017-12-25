@@ -214,6 +214,14 @@
     background-color: lighten($grey, 3%);
     width: 100%;
 
+    .btn-success {
+      background-color: $green;
+
+      &:hover{
+        color: $yellow;
+      }
+    }
+
     & ul {
       padding: 2px;
       background-color: $white;
@@ -245,20 +253,19 @@
           }
         }
 
-
         .title {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          &.active{
+          &.active {
             color: $yellow;
-            span,i{
+            span, i {
               color: $yellow;
             }
           }
 
-          &:hover{
+          &:hover {
             color: $yellow;
 
             & span {
@@ -289,13 +296,13 @@
           padding: 2px;
           margin-top: 5px;
 
-          & li{
-            background-color:$green-light;
+          & li {
+            background-color: $green-light;
 
-            & a{
-              font-size:12px;
+            & a {
+              font-size: 12px;
 
-              &.active{
+              &.active {
                 color: $yellow;
               }
             }
