@@ -15,36 +15,34 @@
     }
 
     .menu_icon {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 5px;
-      height: 50px;
-      position: relative;
 
-      i {
-        cursor: pointer;
-        font-size: 24px;
-        color: $white;
-        padding: 5px;
-        //border: 1px solid $white;
-        //background-color: darken($grey,15%);
-        //@include shadow_block;
-        @include shadow_text;
+      .wrap_icon {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
 
-      }
+        i {
+          cursor: pointer;
+          font-size: 24px;
+          color: $white;
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+          margin-right: 25px;
+          @include shadow_text;
 
-      .run_string{
-        padding: 5px;
-        height: 50px;
-        color: $green3;
-        position: absolute;
-        top: 7px;
-        left: 50px;
-        width: 100%;
-
-        span{
-          color: $yellow;
         }
+
+        .run_string {
+          color: $green3;
+          height: 30px;
+
+          span {
+            color: $yellow;
+          }
+        }
+
       }
     }
 
@@ -229,14 +227,14 @@
     background-color: lighten($grey, 3%);
     width: 100%;
 
-    .search{
+    .search {
       margin-top: 10px;
     }
 
     .btn-success {
       background-color: $green;
 
-      &:hover{
+      &:hover {
         color: $yellow;
         border: 1px solid $yellow;
       }
