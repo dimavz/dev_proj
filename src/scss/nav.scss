@@ -16,9 +16,10 @@
 
     .menu_icon {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       padding-top: 5px;
+      height: 50px;
+      position: relative;
 
       i {
         cursor: pointer;
@@ -30,6 +31,20 @@
         //@include shadow_block;
         @include shadow_text;
 
+      }
+
+      .run_string{
+        padding: 5px;
+        height: 50px;
+        color: $green3;
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        width: 100%;
+
+        span{
+          color: $yellow;
+        }
       }
     }
 
@@ -213,6 +228,10 @@
   .mobile_menu {
     background-color: lighten($grey, 3%);
     width: 100%;
+
+    .search{
+      margin-top: 10px;
+    }
 
     .btn-success {
       background-color: $green;
