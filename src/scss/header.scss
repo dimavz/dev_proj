@@ -246,6 +246,16 @@
             margin-left: -6px;
           }
         }
+        .run_str{
+          color: $green3;
+
+          span{
+            color: $yellow;
+            margin-right: 10px;
+            text-transform: uppercase;
+          }
+
+        }
       }
     }
   }

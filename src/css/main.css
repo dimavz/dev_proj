@@ -264,6 +264,12 @@
           color: #4EC698; }
         #header .header_content .wrap_panel .wrap_run_str .icons .fa-lg {
           margin-left: -6px; }
+      #header .header_content .wrap_panel .wrap_run_str .run_str {
+        color: #06fc23; }
+        #header .header_content .wrap_panel .wrap_run_str .run_str span {
+          color: yellow;
+          margin-right: 10px;
+          text-transform: uppercase; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
