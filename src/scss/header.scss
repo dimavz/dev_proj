@@ -22,6 +22,13 @@
         font-family: 'RobotoBold', sans-serif;
         font-weight: bold;
         @include shadow_text;
+        @include devices-max-width-1200px{
+          font-size: 66px;
+        }
+        @include devices-max-width-992px{
+          font-size: 62px;
+          margin-top: 15px;
+        }
 
       }
       .phone{
@@ -29,14 +36,27 @@
         display: flex;
         align-items: center;
         @include shadow_text;
+        @include devices-max-width-1200px{
+          margin-top: -7px;
+        }
+        @include devices-max-width-992px{
+          margin-top: -10px;
+        }
 
         i{
           font-size: 22px;
           margin-right: 10px;
+          @include devices-max-width-1200px{
+            font-size: 18px;
+            margin-right: 8px;
+          }
         }
         span{
           font-size: 18px;
           font-weight: bold;
+          @include devices-max-width-1200px{
+            font-size: 16px;
+          }
         }
       }
     }
@@ -53,6 +73,14 @@
         font-size: 28px;
         font-weight: bold;
         @include shadow_text;
+        @include devices-max-width-1200px{
+          font-size: 26px;
+        }
+        @include devices-max-width-992px{
+          font-size: 24px;
+          padding-top: 0px;
+          margin-top: 15px;
+        }
       }
       span{
         color: $yellow;
@@ -60,6 +88,15 @@
         margin-top: 7px;
         @include shadow_text;
         font-size: 18px;
+
+        @include devices-max-width-1200px{
+          margin-left: -115px;
+          margin-top: -3px;
+          font-size: 16px;
+        }
+        @include devices-max-width-992px{
+          margin-left: 0px;
+        }
       }
     }
 
@@ -85,6 +122,17 @@
         @include shadow_block;
         @include shadow_text;
 
+        @include devices-max-width-1200px{
+          font-size:18px;
+          margin: 4px;
+          padding: 6px;
+        }
+        @include devices-max-width-992px{
+          font-size:16px;
+          margin: 3px;
+          padding: 5px;
+        }
+
         &:hover{
           color: $yellow;
           border: 1px solid $yellow;
@@ -93,6 +141,10 @@
         i {
           padding-right: 5px;
           font-size: 22px;
+
+          @include devices-max-width-992px{
+            font-size:18px;
+          }
         }
       }
     }

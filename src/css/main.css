@@ -32,6 +32,13 @@
       font-family: 'RobotoBold', sans-serif;
       font-weight: bold;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+      @media only screen and (max-width: 1200px) {
+        #header .header_content .wrap_site_info h1 {
+          font-size: 66px; } }
+      @media only screen and (max-width: 992px) {
+        #header .header_content .wrap_site_info h1 {
+          font-size: 62px;
+          margin-top: 15px; } }
     #header .header_content .wrap_site_info .phone {
       color: yellow;
       display: -webkit-box;
@@ -43,12 +50,25 @@
           -ms-flex-align: center;
               align-items: center;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+      @media only screen and (max-width: 1200px) {
+        #header .header_content .wrap_site_info .phone {
+          margin-top: -7px; } }
+      @media only screen and (max-width: 992px) {
+        #header .header_content .wrap_site_info .phone {
+          margin-top: -10px; } }
       #header .header_content .wrap_site_info .phone i {
         font-size: 22px;
         margin-right: 10px; }
+        @media only screen and (max-width: 1200px) {
+          #header .header_content .wrap_site_info .phone i {
+            font-size: 18px;
+            margin-right: 8px; } }
       #header .header_content .wrap_site_info .phone span {
         font-size: 18px;
         font-weight: bold; }
+        @media only screen and (max-width: 1200px) {
+          #header .header_content .wrap_site_info .phone span {
+            font-size: 16px; } }
   #header .header_content .wrap_slogan_info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -73,12 +93,28 @@
       font-size: 28px;
       font-weight: bold;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+      @media only screen and (max-width: 1200px) {
+        #header .header_content .wrap_slogan_info h3 {
+          font-size: 26px; } }
+      @media only screen and (max-width: 992px) {
+        #header .header_content .wrap_slogan_info h3 {
+          font-size: 24px;
+          padding-top: 0px;
+          margin-top: 15px; } }
     #header .header_content .wrap_slogan_info span {
       color: yellow;
       margin-left: -180px;
       margin-top: 7px;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
       font-size: 18px; }
+      @media only screen and (max-width: 1200px) {
+        #header .header_content .wrap_slogan_info span {
+          margin-left: -115px;
+          margin-top: -3px;
+          font-size: 16px; } }
+      @media only screen and (max-width: 992px) {
+        #header .header_content .wrap_slogan_info span {
+          margin-left: 0px; } }
   #header .header_content .battons {
     margin-top: 25px;
     display: -webkit-box;
@@ -111,12 +147,25 @@
       -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
               box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+      @media only screen and (max-width: 1200px) {
+        #header .header_content .battons a {
+          font-size: 18px;
+          margin: 4px;
+          padding: 6px; } }
+      @media only screen and (max-width: 992px) {
+        #header .header_content .battons a {
+          font-size: 16px;
+          margin: 3px;
+          padding: 5px; } }
       #header .header_content .battons a:hover {
         color: yellow;
         border: 1px solid yellow; }
       #header .header_content .battons a i {
         padding-right: 5px;
         font-size: 22px; }
+        @media only screen and (max-width: 992px) {
+          #header .header_content .battons a i {
+            font-size: 18px; } }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
