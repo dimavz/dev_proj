@@ -44,7 +44,7 @@ $(document).ready(function() {
         autoplay:true,
         autoplayTimeout:2000,
 		// nav:true,
-        // autoplayHoverPause:true,
+        autoplayHoverPause:true,
         // navText:['<span>Предыдущий</span>','<span>Следующий</span>'],
         responsive:{
             0:{

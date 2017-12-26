@@ -608,7 +608,10 @@ ul {
             border-radius: 3px;
     padding: 10px;
     -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
-            box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
+            box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden; }
+    #slider .slider_wrapper .owl-carousel {
+      margin-left: 25px; }
     #slider .slider_wrapper .item {
       width: 250px;
       height: 180px; }
@@ -631,10 +634,9 @@ ul {
           left: 0px;
           width: 40px;
           height: 174px;
-          background-image: -webkit-linear-gradient(right, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
-          background-image: -o-linear-gradient(right, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
-          background-image: linear-gradient(to left, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
-          opacity: .5; }
+          background-image: -webkit-linear-gradient(right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
+          background-image: -o-linear-gradient(right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
+          background-image: linear-gradient(to left, transparent 0px, rgba(78, 198, 152, 0.5) 100%); }
           #slider .slider_wrapper .owl-controls .owl-nav .owl-prev:hover i {
             color: yellow;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
@@ -642,7 +644,8 @@ ul {
             position: absolute;
             top: 70px;
             left: 0px;
-            z-index: 101; }
+            z-index: 101;
+            color: #4EC698; }
         #slider .slider_wrapper .owl-controls .owl-nav .owl-next {
           position: absolute;
           top: 0px;
@@ -651,8 +654,7 @@ ul {
           height: 174px;
           background-image: -webkit-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
           background-image: -o-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
-          background-image: linear-gradient(to right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
-          opacity: .5; }
+          background-image: linear-gradient(to right, transparent 0px, rgba(78, 198, 152, 0.5) 100%); }
           #slider .slider_wrapper .owl-controls .owl-nav .owl-next:hover i {
             color: yellow;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
@@ -660,4 +662,5 @@ ul {
             position: absolute;
             top: 70px;
             right: 0px;
-            z-index: 101; }
+            z-index: 101;
+            color: #4EC698; }
