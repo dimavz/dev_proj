@@ -600,6 +600,7 @@ ul {
 #slider {
   background-color: #396B62; }
   #slider .slider_wrapper {
+    position: relative;
     height: 180px;
     background-color: #fff;
     border: 3px solid #4EC698;
@@ -614,3 +615,49 @@ ul {
       #slider .slider_wrapper .item img {
         width: 220px;
         height: 150px; }
+    #slider .slider_wrapper .owl-controls {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 100;
+      width: 100%; }
+      #slider .slider_wrapper .owl-controls .owl-nav {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        #slider .slider_wrapper .owl-controls .owl-nav .owl-prev {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 40px;
+          height: 174px;
+          background-image: -webkit-linear-gradient(right, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
+          background-image: -o-linear-gradient(right, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
+          background-image: linear-gradient(to left, rgba(78, 198, 152, 0.5) 100%, transparent 0px);
+          opacity: .5; }
+          #slider .slider_wrapper .owl-controls .owl-nav .owl-prev:hover i {
+            color: yellow;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+          #slider .slider_wrapper .owl-controls .owl-nav .owl-prev i {
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            z-index: 101; }
+        #slider .slider_wrapper .owl-controls .owl-nav .owl-next {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 40px;
+          height: 174px;
+          background-image: -webkit-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
+          background-image: -o-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
+          background-image: linear-gradient(to right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
+          opacity: .5; }
+          #slider .slider_wrapper .owl-controls .owl-nav .owl-next:hover i {
+            color: yellow;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+          #slider .slider_wrapper .owl-controls .owl-nav .owl-next i {
+            position: absolute;
+            top: 70px;
+            right: 0px;
+            z-index: 101; }
