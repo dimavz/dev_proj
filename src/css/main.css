@@ -600,6 +600,17 @@ ul {
 #slider {
   background-color: #396B62; }
   #slider .slider_wrapper {
-    height: 300px;
+    height: 180px;
+    background-color: #fff;
+    border: 3px solid #4EC698;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px;
     -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
+    #slider .slider_wrapper .item {
+      width: 250px;
+      height: 180px; }
+      #slider .slider_wrapper .item img {
+        width: 220px;
+        height: 150px; }

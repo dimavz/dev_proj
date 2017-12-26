@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-
-    // $("li").click(function(){
-    //     $(".dropdown").slideToggle();
-    // });
-
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
@@ -41,25 +36,64 @@ $(document).ready(function() {
 	});
 
 	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
-	owl.owlCarousel({
-		items : 4
-	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
-	});
+	//Документация: https://owlcarousel2.github.io/OwlCarousel2/
+    var owl = $('.owl-carousel').owlCarousel({
+        loop:true,
+		dots:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+		// nav:true,
+        // autoplayHoverPause:true,
+        // navText:['<span>Предыдущий</span>','<span>Следующий</span>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            480 : {
+                items:1
+            },
+            600:{
+                items:2
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
+
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    });
+
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
+
+    // Переход с следующему элементу слайдера
+    $('.owl-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    // Переход к предыдущему элементу слайдера
+    $('.owl-prev').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    });
 
 	//Кнопка "Наверх"
 	//Документация:
