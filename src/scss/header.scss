@@ -220,7 +220,7 @@
           }
           button{
             height: 30px;
-            background-color:$green-light;
+            background-color:$green;
             border-bottom-right-radius: 3px;
             border-top-right-radius: 3px;
             @include devices-max-width-1200px{
