@@ -39,7 +39,7 @@ $(document).ready(function() {
 	//Документация: https://owlcarousel2.github.io/OwlCarousel2/
     var owl = $('.owl-carousel').owlCarousel({
         loop:true,
-		dots:true,
+		// dots:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:2000,
