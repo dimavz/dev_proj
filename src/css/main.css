@@ -597,6 +597,9 @@ ul {
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
+
+/*==========  Desktop First Method  ==========*/
+/*==========  Mobile First Method  ==========*/
 #slider {
   background-color: #396B62; }
   #slider .slider_wrapper {
@@ -651,6 +654,7 @@ ul {
           left: 0px;
           width: 40px;
           height: 174px;
+          cursor: pointer;
           background-image: -webkit-linear-gradient(right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
           background-image: -o-linear-gradient(right, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
           background-image: linear-gradient(to left, transparent 0px, rgba(78, 198, 152, 0.5) 100%); }
@@ -669,6 +673,7 @@ ul {
           right: 0px;
           width: 40px;
           height: 174px;
+          cursor: pointer;
           background-image: -webkit-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
           background-image: -o-linear-gradient(left, transparent 0px, rgba(78, 198, 152, 0.5) 100%);
           background-image: linear-gradient(to right, transparent 0px, rgba(78, 198, 152, 0.5) 100%); }
