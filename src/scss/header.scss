@@ -149,6 +149,16 @@
         }
       }
     }
+    .wrap_panel{
+      display: block;
+      background-color: darken($grey,5%);
+      margin: 5px 15px;
+      padding: 5px;
+      height: 40px;
+      border-radius: 3px;
+      border: 1px solid $white;
+      @include shadow_block;
+    }
   }
 
 

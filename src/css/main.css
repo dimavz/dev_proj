@@ -167,6 +167,17 @@
         @media only screen and (max-width: 992px) {
           #header .header_content .battons a i {
             font-size: 18px; } }
+  #header .header_content .wrap_panel {
+    display: block;
+    background-color: #373b3e;
+    margin: 5px 15px;
+    padding: 5px;
+    height: 40px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0 rgba(0, 0, 0, 0.12); }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
