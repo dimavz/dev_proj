@@ -26,6 +26,10 @@
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 20px; }
+    @media only screen and (max-width: 768px) {
+      #header .header_content .wrap_site_info {
+        padding-bottom: 0px;
+        margin-top: -10px; } }
     #header .header_content .wrap_site_info h1 {
       color: #fff;
       font-size: 72px;
@@ -101,6 +105,11 @@
           font-size: 24px;
           padding-top: 0px;
           margin-top: 15px; } }
+      @media only screen and (max-width: 768px) {
+        #header .header_content .wrap_slogan_info h3 {
+          margin-top: 0px;
+          text-align: center;
+          font-size: 20px; } }
     #header .header_content .wrap_slogan_info span {
       color: yellow;
       margin-left: -180px;
@@ -115,6 +124,10 @@
       @media only screen and (max-width: 992px) {
         #header .header_content .wrap_slogan_info span {
           margin-left: 0px; } }
+      @media only screen and (max-width: 768px) {
+        #header .header_content .wrap_slogan_info span {
+          text-align: center;
+          font-size: 14px; } }
   #header .header_content .battons {
     margin-top: 25px;
     display: -webkit-box;
@@ -130,6 +143,9 @@
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media only screen and (max-width: 768px) {
+      #header .header_content .battons {
+        margin-top: 5px; } }
     #header .header_content .battons a {
       text-decoration: none;
       font-size: 20px;
