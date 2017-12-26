@@ -219,6 +219,34 @@
           }
         }
       }
+      .wrap_run_str{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-top: -8px;
+        @include devices-max-width-1200px{
+          margin-top: -11px;
+        }
+
+        .icons{
+          color: $white;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          margin-left: -10px;
+
+          .sm{
+            margin-right: -7px;
+          }
+
+          .fa-2x{
+            color: $green-light;
+          }
+          .fa-lg{
+            margin-left: -6px;
+          }
+        }
+      }
     }
   }
 
