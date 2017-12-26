@@ -308,7 +308,8 @@ ul {
             #header .navbar .wrapper_nav > ul > li.dropdown:hover ul {
               visibility: visible;
               top: 38px;
-              opacity: .8; }
+              opacity: 1;
+              background-color: #4f555a; }
             #header .navbar .wrapper_nav > ul > li.dropdown ul {
               margin: 0;
               padding: 0;

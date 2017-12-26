@@ -179,7 +179,8 @@
               ul {
                 visibility: visible;
                 top: 38px;
-                opacity: .8;
+                opacity: 1;
+                background-color: lighten($grey,5%);
               }
             }
 
