@@ -119,6 +119,7 @@
         float: right;
         cursor: pointer;
         border: 1px solid $white;
+        width: 100%;
         @include shadow_block;
         @include shadow_text;
 
