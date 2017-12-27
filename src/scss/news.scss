@@ -2,10 +2,10 @@
 @import "partitions/mixins";
 @import "partitions/media";
 
-#news{
-  background-color:$green;
+#news {
+  background-color: $green;
 
-  .wrap_news{
+  .wrap_news {
     @include clear;
     border: 3px solid $green-light;
     border-radius: 3px;
@@ -13,7 +13,7 @@
     padding: 10px;
     //height: 400px;
 
-    h1{
+    h1 {
       @include clear;
       color: $green-light;
       font-size: 22px;
@@ -22,44 +22,44 @@
       text-transform: uppercase;
     }
 
-    .top_article{
+    .top_article {
       padding: 10px;
       width: 100%;
       height: 400px;
       position: relative;
       //cursor: pointer;
 
-      &:hover{
-        .content{
-          top:0px;
+      &:hover {
+        .content {
+          top: 0px;
           height: 400px;
 
-          .title{
+          .title {
 
             border-bottom: 2px dotted $green;
           }
-          .text{
+          .text {
             visibility: visible;
             padding-left: 10px;
           }
         }
       }
 
-      .image{
+      .image {
         padding: 3px;
         width: 100%;
         height: 300px;
         overflow: hidden;
         border: 1px solid $grey;
 
-        img{
+        img {
           width: 100%;
           height: 100%;
         }
 
       }
 
-      .content{
+      .content {
         position: absolute;
         padding: 10px;
         padding-top: 0px;
@@ -67,88 +67,204 @@
         left: 0;
         height: 100px;
         overflow: hidden;
-        background-color:$white;
+        background-color: $white;
         transition: all .8s;
 
-        .title{
+        .title {
           margin: 0;
           padding: 5px;
 
-          .date{
+          .date {
             display: flex;
-            .day{
+            .day {
               padding-right: 5px;
             }
-            .month{
+            .month {
               padding-right: 5px;
             }
           }
 
-          h2{
+          h2 {
             @include clear;
             padding-top: 5px;
             font-size: 20px;
-            color: darken($grey,20%);
+            color: darken($grey, 20%);
             height: 50px;
             overflow: hidden;
 
-            a{
-              color: darken($grey,20%);
+            a {
+              color: darken($grey, 20%);
               text-decoration: none;
 
-              &:hover{
+              &:hover {
                 color: $green;
               }
             }
           }
         }
 
-        .text{
+        .text {
           padding: 5px;
           visibility: hidden;
           max-height: 230px;
           overflow: hidden;
         }
 
-          .link{
-            margin-top: 10px;
-            margin-left: 10px;
-            padding: 5px;
-            padding-left: 10px;
-            background-color:$green;
-            width: 150px;
-            border-radius: 5px;
-            a{
-              display: flex;
-              align-items: center;
-              text-decoration: none;
-              justify-content: space-around;
-              color: $white;
+        .link {
+          margin-top: 10px;
+          margin-left: 10px;
+          padding: 5px;
+          padding-left: 10px;
+          background-color: $green;
+          width: 150px;
+          border-radius: 5px;
+          a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: space-around;
+            color: $white;
 
-              &:hover{
+            &:hover {
+              color: $yellow;
+
+              i {
                 color: $yellow;
-
-                i{
-                  color: $yellow;
-                }
-              }
-
-              i{
-                padding-right: 5px;
-                color: $green-light;
-                font-size: 20px;
-                color: $white;
-              }
-              span{
-                font-size: 16px;
               }
             }
 
+            i {
+              padding-right: 5px;
+              color: $green-light;
+              font-size: 20px;
+              color: $white;
+            }
+            span {
+              font-size: 16px;
+            }
           }
 
+        }
 
       }
     }
 
+    .articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+
+      .article {
+        display: flex;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+
+          .art_img {
+            visibility: hidden;
+            top: 100%;
+          }
+          .art_cont {
+            .date {
+              //top: 5px;
+              //left: 5px;
+              visibility: hidden;
+              top: 100%;
+            }
+            .title {
+              //left: 5px;
+              visibility: hidden;
+              top: 100%;
+            }
+            .art_text {
+              visibility: visible;
+              left: 5px;
+              top: 0px;
+            }
+            .link {
+              visibility: visible;
+              top:160px;
+            }
+          }
+        }
+
+        .art_img {
+          position: absolute;
+          top: 0;
+          left: 5px;
+          padding: 3px;
+          width: 250px;
+          height: 150px;
+          border: 1px solid $grey;
+          margin-right: 15px;
+          transition: all .3s;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .art_cont {
+          padding: 3px;
+
+          .date {
+            position: absolute;
+            top: 0px;
+            left: 270px;
+            font-size: 16px;
+            transition: all .3s;
+          }
+          .title {
+            position: absolute;
+            left: 270px;
+            top: 30px;
+            transition: all .3s;
+            h3 {
+              @include clear;
+              font-size: 20px;
+
+              a {
+                color: darken($grey, 20%);
+                text-decoration: none;
+                &:hover {
+                  color: $green;
+                }
+              }
+            }
+          }
+          .art_text {
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            left: 5px;
+            visibility: hidden;
+            transition: all .5s;
+            max-height: 160px;
+            overflow: hidden;
+          }
+          .link {
+            margin-top: 5px;
+            position: absolute;
+            top: 100%;
+            left: 5px;
+            visibility: hidden;
+            transition: all .5s;
+
+            a{
+              text-decoration: none;
+              &:hover{
+                color: $green;
+              }
+              i{
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
