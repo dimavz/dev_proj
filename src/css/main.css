@@ -606,8 +606,7 @@ ul {
     -webkit-border-radius: 3px;
             border-radius: 3px;
     background-color: #fff;
-    padding: 10px;
-    height: 400px; }
+    padding: 10px; }
     #news .wrap_news h1 {
       margin: 0;
       padding: 0;
@@ -616,6 +615,104 @@ ul {
       padding: 5px 20px;
       font-family: 'RobotoRegular', sans-serif;
       text-transform: uppercase; }
+    #news .wrap_news .top_article {
+      padding: 10px;
+      width: 100%;
+      height: 400px;
+      position: relative; }
+      #news .wrap_news .top_article:hover .content {
+        top: 0px;
+        height: 400px; }
+        #news .wrap_news .top_article:hover .content .title {
+          border-bottom: 2px dotted #396B62; }
+        #news .wrap_news .top_article:hover .content .text {
+          visibility: visible;
+          padding-left: 10px; }
+      #news .wrap_news .top_article .image {
+        padding: 3px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border: 1px solid #43484C; }
+        #news .wrap_news .top_article .image img {
+          width: 100%;
+          height: 100%; }
+      #news .wrap_news .top_article .content {
+        position: absolute;
+        padding: 10px;
+        padding-top: 0px;
+        top: 310px;
+        left: 0;
+        height: 100px;
+        overflow: hidden;
+        background-color: #fff;
+        -webkit-transition: all .8s;
+        -o-transition: all .8s;
+        transition: all .8s; }
+        #news .wrap_news .top_article .content .title {
+          margin: 0;
+          padding: 5px; }
+          #news .wrap_news .top_article .content .title .date {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; }
+            #news .wrap_news .top_article .content .title .date .day {
+              padding-right: 5px; }
+            #news .wrap_news .top_article .content .title .date .month {
+              padding-right: 5px; }
+          #news .wrap_news .top_article .content .title h2 {
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+            font-size: 20px;
+            color: #131516;
+            height: 50px;
+            overflow: hidden; }
+            #news .wrap_news .top_article .content .title h2 a {
+              color: #131516;
+              text-decoration: none; }
+              #news .wrap_news .top_article .content .title h2 a:hover {
+                color: #396B62; }
+        #news .wrap_news .top_article .content .text {
+          padding: 5px;
+          visibility: hidden;
+          max-height: 230px;
+          overflow: hidden; }
+        #news .wrap_news .top_article .content .link {
+          margin-top: 10px;
+          margin-left: 10px;
+          padding: 5px;
+          padding-left: 10px;
+          background-color: #396B62;
+          width: 150px;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }
+          #news .wrap_news .top_article .content .link a {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-decoration: none;
+            -webkit-justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+            color: #fff; }
+            #news .wrap_news .top_article .content .link a:hover {
+              color: yellow; }
+              #news .wrap_news .top_article .content .link a:hover i {
+                color: yellow; }
+            #news .wrap_news .top_article .content .link a i {
+              padding-right: 5px;
+              color: #4EC698;
+              font-size: 20px;
+              color: #fff; }
+            #news .wrap_news .top_article .content .link a span {
+              font-size: 16px; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
@@ -656,7 +753,7 @@ ul {
       width: 250px;
       height: 180px; }
       #slider .slider_wrapper .item img {
-        width: 220px;
+        width: 222px;
         height: 150px; }
     #slider .slider_wrapper .owl-controls {
       position: absolute;
