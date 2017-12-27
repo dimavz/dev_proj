@@ -770,6 +770,7 @@ ul {
         #news .wrap_news .articles .article .art_cont {
           padding: 3px; }
           #news .wrap_news .articles .article .art_cont .date {
+            opacity: .7;
             position: absolute;
             top: 0px;
             left: 220px;
