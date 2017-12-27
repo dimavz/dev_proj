@@ -260,13 +260,40 @@
             a{
               text-decoration: none;
               color: $white;
+              display: flex;
+              align-items: center;
               &:hover{
                 color: $yellow;
               }
               i{
                 margin-left: 5px;
+                font-size: 18px;
               }
             }
+          }
+        }
+      }
+    }
+
+    .all_news{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button{
+
+        padding: 5px 10px;
+        background-color: $green;
+        border-radius: 5px;
+        &:hover{
+          color: $yellow;
+          a{color: $yellow}
+          @include shadow_block;
+        }
+        a{
+          color: $white;
+          &:hover{
+            color: $yellow;
           }
         }
       }
