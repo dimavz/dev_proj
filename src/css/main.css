@@ -1,5 +1,35 @@
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
+#block_links {
+  background-color: #396B62;
+  margin-bottom: 10px; }
+  #block_links .wrap_block_links {
+    background-color: #fff;
+    border: 3px solid #4EC698;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px;
+    padding-bottom: 20px; }
+    #block_links .wrap_block_links h3 {
+      margin-top: 15px;
+      margin-left: 10px;
+      font-size: 20px;
+      color: #4EC698;
+      text-transform: uppercase; }
+    #block_links .wrap_block_links ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      padding-left: 20px; }
+      #block_links .wrap_block_links ul li {
+        list-style-type: square;
+        color: #396B62; }
+        #block_links .wrap_block_links ul li a {
+          color: #396B62;
+          text-decoration: none; }
+          #block_links .wrap_block_links ul li a:hover {
+            color: #4EC698; }
+    #block_links .wrap_block_links .blank {
+      padding: 5px; }
 
 /*==========  Desktop First Method  ==========*/
 /*==========  Mobile First Method  ==========*/
@@ -609,7 +639,8 @@ ul {
     -webkit-border-radius: 3px;
             border-radius: 3px;
     background-color: #fff;
-    padding: 10px; }
+    padding: 10px;
+    margin-bottom: 10px; }
     #news .wrap_news h1 {
       margin: 0;
       padding: 0;
