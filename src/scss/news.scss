@@ -109,15 +109,19 @@
           visibility: hidden;
           max-height: 230px;
           overflow: hidden;
+
+          a {
+            color: $green-light;
+          }
         }
 
         .link {
           margin-top: 10px;
           margin-left: 10px;
-          padding: 5px;
-          padding-left: 10px;
+          padding: 3px;
+          //padding-left: 5px;
           background-color: $green;
-          width: 150px;
+          width: 130px;
           border-radius: 5px;
           a {
             display: flex;
@@ -137,7 +141,7 @@
             i {
               padding-right: 5px;
               color: $green-light;
-              font-size: 20px;
+              font-size: 16px;
               color: $white;
             }
             span {
@@ -250,26 +254,29 @@
           }
           .link {
             margin-top: 5px;
-            padding: 5px;
+            padding: 3px;
             position: absolute;
             top: 100%;
             left: 5px;
             visibility: hidden;
             transition: all .8s;
             background-color:$green;
-            border-radius: 3px;
+            border-radius: 5px;
+            width: 130px;
+            @include shadow_block;
 
             a{
               text-decoration: none;
               color: $white;
               display: flex;
               align-items: center;
+              justify-content: space-around;
               &:hover{
                 color: $yellow;
               }
               i{
                 margin-left: 5px;
-                font-size: 18px;
+                font-size: 16px;
               }
             }
           }
