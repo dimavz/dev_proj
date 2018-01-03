@@ -40,21 +40,15 @@ $(document).ready(function() {
     var owl = $('.owl-carousel').owlCarousel({
         loop:true,
 		// dots:true,
-        margin:10,
+        margin: 30,
         autoplay:true,
         autoplayTimeout:2000,
 		// nav:true,
-        // autoplayHoverPause:true,
+        autoplayHoverPause:true,
         // navText:['<span>Предыдущий</span>','<span>Следующий</span>'],
         responsive:{
             0:{
                 items:1
-            },
-            480 : {
-                items:1
-            },
-            600:{
-                items:2
             },
             768:{
                 items:2
