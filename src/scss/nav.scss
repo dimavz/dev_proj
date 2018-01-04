@@ -175,9 +175,15 @@
               }
               ul {
                 visibility: visible;
-                top: 38px;
+                top: 39px;
                 opacity: 1;
                 background-color: lighten($grey,5%);
+                @include devices-max-width-1200px{
+                  top: 37px;
+                }
+                @include devices-max-width-992px{
+                  top: 36px;
+                }
               }
             }
 
@@ -188,14 +194,19 @@
               flex-direction: column;
               align-content: flex-start;
               position: absolute;
-              top: 38px;
+              top: 39px;
               left: 0;
               min-width: 300px;
               background-color: $grey;
               z-index: 10;
               visibility: hidden;
-              //opacity: 0;
               transition: all .3s;
+              @include devices-max-width-1200px{
+                top: 37px;
+              }
+              @include devices-max-width-992px{
+                top: 36px;
+              }
 
               > li {
                 padding: 5px 15px;
