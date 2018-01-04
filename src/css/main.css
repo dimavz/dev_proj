@@ -350,9 +350,11 @@
           border: none; }
         #header .wrap_header .container .panel .search button {
           background-color: #396B62;
-          border: 1px solid #4EC698;
-          -webkit-border-radius: 3px;
-                  border-radius: 3px;
+          border: 1px solid #33FFCC;
+          -webkit-border-top-right-radius: 3px;
+                  border-top-right-radius: 3px;
+          -webkit-border-bottom-right-radius: 3px;
+                  border-bottom-right-radius: 3px;
           color: #fff; }
           #header .wrap_header .container .panel .search button:hover {
             color: yellow;

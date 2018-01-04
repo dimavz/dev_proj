@@ -196,8 +196,9 @@
           }
           button{
             background-color:$green;
-            border: 1px solid $green-light;
-            border-radius: 3px;
+            border: 1px solid $marine;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
             color: $white;
 
             &:hover{
