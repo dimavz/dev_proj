@@ -155,6 +155,9 @@
             -ms-flex-pack: center;
                 justify-content: center;
         width: 240px; }
+        @media only screen and (max-width: 992px) {
+          #header .wrap_header .container .header_content .logo {
+            width: 180px; } }
         #header .wrap_header .container .header_content .logo h1 {
           margin: 0;
           padding: 0;
@@ -352,7 +355,8 @@
             font-size: 18px; } }
         @media only screen and (max-width: 992px) {
           #header .wrap_header .container .meta_info .phone {
-            font-size: 16px; } }
+            font-size: 16px;
+            width: 180px; } }
         #header .wrap_header .container .meta_info .phone i {
           font-size: 24px;
           margin-right: 10px; }
