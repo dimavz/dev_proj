@@ -10,11 +10,18 @@
       display: flex;
       flex-direction: column;
 
+
       .header_content{
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
+        @include devices-max-width-768px{
+          flex-direction: column;
+        }
+        @include devices-max-width-320px{
+          margin-left: -15px;
+        }
 
         .logo{
           display: flex;
@@ -29,17 +36,23 @@
             font-size: 92px;
             font-family: RobotoBold,sans-serif;
             @include shadow_text;
+            @include devices-max-width-1200px{
+              font-size: 82px;
+            }
+            @include devices-max-width-992px{
+              font-size: 62px;
+            }
           }
           .phone{
             display: flex;
             align-items: center;
             color: $yellow;
             @include shadow_text;
-            font-size: 20px;
+            font-size: 16px;
             font-family: Roboto, sans-serif;
 
             i{
-              font-size:24px;
+              font-size:18px;
               margin-right: 10px;
             }
           }
@@ -51,12 +64,34 @@
           margin-left: 20px;
           width: 500px;
 
+          @include devices-max-width-1200px{
+            width: 450px;
+          }
+          @include devices-max-width-992px{
+            width: 300px;
+          }
+          @include devices-max-width-768px{
+            justify-content: center;
+          }
+
           h2{
             @include clear;
             color: $white;
             font-size: 32px;
             font-family: Roboto, sans-serif;
             @include shadow_text;
+
+            @include devices-max-width-1200px{
+              font-size: 28px;
+            }
+            @include devices-max-width-992px{
+              font-size:20px;
+            }
+            @include devices-max-width-768px{
+              font-size:18px;
+              margin-top: 5px;
+              text-align: center;
+            }
           }
 
           span{
@@ -64,6 +99,11 @@
             font-size: 18px;
             padding-top: 2px;
             @include shadow_text;
+            @include devices-max-width-768px{
+              font-size:14px;
+              margin-top: 5px;
+              text-align: center;
+            }
           }
         }
 
@@ -75,6 +115,21 @@
           width: 200px;
           margin-left: auto;
           margin-bottom: -45px;
+          @include devices-max-width-1200px{
+            width: 170px;
+          }
+          @include devices-max-width-992px{
+            width: 140px;
+          }
+          @include devices-max-width-768px{
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px auto;
+            width: 100%;
+          }
+          @include devices-max-width-320px{
+            //margin-left: -5px;
+          }
 
           a{
             display: flex;
@@ -91,7 +146,15 @@
             font-size:20px;
             @include shadow_text;
             @include shadow_block;
-
+            @include devices-max-width-1200px{
+              font-size:18px;
+            }
+            @include devices-max-width-992px{
+              font-size: 14px;
+            }
+            @include devices-max-width-768px{
+              margin: 5px;
+            }
             &:hover{
               color: $yellow;
               border: 1px solid $yellow;
@@ -100,6 +163,9 @@
             i{
               margin-right: 10px;
               font-size: 22px;
+              @include devices-max-width-1200px{
+                font-size: 20px;
+              }
             }
           }
 
@@ -119,10 +185,24 @@
           color: $yellow;
           font-size: 20px;
           @include shadow_text;
+          @include devices-max-width-1200px{
+            font-size: 18px;
+          }
+          @include devices-max-width-992px{
+            font-size: 16px;
+          }
 
           i{
             font-size:24px;
             margin-right: 10px;
+            @include devices-max-width-1200px{
+              font-size:20px;
+              margin-right: 7px;
+            }
+            @include devices-max-width-992px{
+              font-size:18px;
+              margin-right: 5px;
+            }
           }
         }
 
@@ -131,6 +211,12 @@
           font-size: 20px;
           @include shadow_text;
           margin-left: 20px;
+          @include devices-max-width-1200px{
+            font-size: 18px;
+          }
+          @include devices-max-width-992px{
+            font-size: 14px;
+          }
         }
       }
 
@@ -157,16 +243,34 @@
             &.fa-chevron-right{
               font-size:16px;
               margin-right: -7px;
+              @include devices-max-width-1200px{
+                font-size: 14px;
+              }
+              @include devices-max-width-992px{
+                font-size: 12px;
+              }
             }
 
             &.fa-2x{
               font-size: 32px;
               color: $green-light;
               margin-right: -5px;
+              @include devices-max-width-1200px{
+                font-size: 28px;
+              }
+              @include devices-max-width-992px{
+                font-size: 24px;
+              }
             }
 
             &.fa-lg{
               font-size:18px ;
+              @include devices-max-width-1200px{
+                font-size: 16px;
+              }
+              @include devices-max-width-992px{
+                font-size: 14px;
+              }
             }
           }
         }
@@ -175,31 +279,65 @@
           color: $green3;
           width: 600px;
           font-size: 22px;
+          @include devices-max-width-1200px{
+            width: 580px;
+            font-size: 18px;
+          }
+          @include devices-max-width-992px{
+            width: 430px;
+            font-size: 16px;
+          }
         }
 
         .search{
+          @include clear;
           margin-left:auto;
           display: flex;
           align-items: center;
           border: 2px solid $green-light;
           border-radius: 3px;
           background-color: $white;
+          @include devices-max-width-992px{
+            border: 1px solid $green-light;
+          }
 
           i{
             margin-left: 5px;
             margin-right: 5px;
             font-size: 20px;
             color: $green-light;
+            @include devices-max-width-1200px{
+              font-size: 18px;
+            }
+            @include devices-max-width-992px{
+              font-size: 16px;
+            }
           }
           input{
             border: none;
+            @include devices-max-width-1200px{
+              width: 166px;
+              font-size: 16px;
+            }
+            @include devices-max-width-992px{
+              width: 120px;
+              font-size: 14px;
+            }
           }
           button{
             background-color:$green;
-            border: 1px solid $marine;
+            border: 1px solid $white;
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
             color: $white;
+            @include devices-max-width-1200px{
+              font-size: 16px;
+            }
+            @include devices-max-width-992px{
+              font-size: 14px;
+              margin-bottom: 1px;
+              height: 100%;
+            }
 
             &:hover{
               color: $yellow;
